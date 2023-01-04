@@ -105,40 +105,44 @@ void display_second_led(){
 
 void increase_led_hour(){
 	temp_hour++;
-	UARTOutput(temp_hour);
 	if(temp_hour == 12) temp_hour = 0;
+	UARTOutput(temp_hour);
 }
 
 void increase_led_minute(){
 	temp_minute++;
-	UARTOutput(temp_minute);
 	if(temp_minute == 59) {
 		temp_minute = 0;
 		temp_hour++;
 	}
+	UARTOutput(temp_minute);
 }
 
 void increase_led_second(){
 	temp_second++;
-	UARTOutput(temp_second);
 	if(temp_second == 59) {
 		temp_second = 0;
 		temp_minute++;
 	}
+	UARTOutput(temp_second);
 }
 void decrease_led_hour(){
 	if(temp_hour == 0) temp_hour = 11;
 	else temp_hour--;
+	UARTOutput(temp_hour);
 }
 
 void decrease_led_minute(){
 	if(temp_minute == 0) temp_minute = 59;
 	else temp_minute--;
+	UARTOutput(temp_minute);
+
 }
 
 void decrease_led_second(){
 	if(temp_second == 0) temp_second = 59;
 	else temp_second--;
+	UARTOutput(temp_second);
 }
 
 void update_led(){
