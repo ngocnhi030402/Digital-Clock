@@ -103,8 +103,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer0(1000);
-  setTimer1(1000);
+  setTimer0(100);
+  setTimer1(100);
   while (1)
   {
 	  fsm_led_clock();

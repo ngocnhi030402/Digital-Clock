@@ -81,26 +81,26 @@ void clearNumberOnClock(int num){
 }
 
 void display_hour_led(){
-	setNumberOnClock(0);
-	setNumberOnClock(3);
-	setNumberOnClock(6);
-	setNumberOnClock(9);
+	setNumberOnClock(LED1);
+	setNumberOnClock(LED4);
+	setNumberOnClock(LED7);
+	setNumberOnClock(LED10);
 }
 void display_minute_led(){
-	setNumberOnClock(11);
-	setNumberOnClock(0);
-	setNumberOnClock(1);
-	setNumberOnClock(5);
-	setNumberOnClock(6);
-	setNumberOnClock(7);
+	setNumberOnClock(LED12);
+	setNumberOnClock(LED1);
+	setNumberOnClock(LED2);
+	setNumberOnClock(LED6);
+	setNumberOnClock(LED7);
+	setNumberOnClock(LED8);
 }
 void display_second_led(){
-	setNumberOnClock(2);
-	setNumberOnClock(3);
-	setNumberOnClock(4);
-	setNumberOnClock(8);
-	setNumberOnClock(9);
-	setNumberOnClock(10);
+	setNumberOnClock(LED3);
+	setNumberOnClock(LED4);
+	setNumberOnClock(LED5);
+	setNumberOnClock(LED9);
+	setNumberOnClock(LED10);
+	setNumberOnClock(LED11);
 }
 
 void increase_led_hour(){
@@ -164,7 +164,7 @@ void display_led(){
 		  setNumberOnClock(second/5);
 		  setNumberOnClock(minute/5);
 		  setNumberOnClock(hour);
-		  setTimer0(10);
+		  setTimer0(100);
 
 		  second++;
 		  temp_second = second;
