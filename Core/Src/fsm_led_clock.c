@@ -111,7 +111,7 @@ void increase_led_hour(){
 
 void increase_led_minute(){
 	temp_minute++;
-	if(temp_minute == 59) {
+	if(temp_minute == 60) {
 		temp_minute = 0;
 		temp_hour++;
 	}
@@ -120,7 +120,7 @@ void increase_led_minute(){
 
 void increase_led_second(){
 	temp_second++;
-	if(temp_second == 59) {
+	if(temp_second == 60) {
 		temp_second = 0;
 		temp_minute++;
 	}
